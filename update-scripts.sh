@@ -19,5 +19,11 @@ git fetch --all
 git reset --hard origin/master
 echo "Done!"
 
+echo "Updating Hoolyhoo's mintyPi scripts..."
+cd /home/pi/MintyComboScript
+git fetch --all
+git reset --hard origin/master
+echo "Done!"
+
 echo "Your mintyPi is up-to-date."
-sleep 10s
+sleep 5s
