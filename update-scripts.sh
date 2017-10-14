@@ -23,7 +23,11 @@ echo "Updating Hoolyhoo's mintyPi scripts..."
 cd /home/pi/MintyComboScript
 git fetch --all
 git reset --hard origin/master
+chmod 777 Pngview/pngview
+chmod 777 Pngview/pngview2
+chmod +x MintyStart.sh
 echo "Done!"
 
-echo "Your mintyPi is up-to-date."
+echo "Your mintyPi is up-to-date.  Rebooting now..."
 sleep 5s
+sudo reboot
