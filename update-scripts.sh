@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Updating mintyPi..."
+chmod +x /home/pi/mintyPi/minty-startup.sh
 
 echo "Updating material theme..."
 cd /home/pi/.emulationstation/themes/es-theme-material
