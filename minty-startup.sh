@@ -1,3 +1,5 @@
 #!/bin/bash
 sleep 5s
-omxplayer -o both -b --layer 10000 "/home/pi/mintyPi/minty-splash.mp4"
+omxplayer -o alsa -b --layer 10000 "/home/pi/mintyPi/minty-splash.mp4"
+sleep 13s
+sudo pkill omxplayer
