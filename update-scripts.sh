@@ -20,13 +20,11 @@ git fetch --all
 git reset --hard origin/master
 echo "Done!"
 
-echo "Updating Hoolyhoo's mintyPi scripts..."
-cd /home/pi/MintyComboScript
+echo "Updating mintyPi scripts..."
+cd /home/pi/OneForAll
 git fetch --all
-git reset --hard origin/master
-chmod 777 Pngview/pngview
-chmod 777 Pngview/pngview2
-chmod +x MintyStart.sh
+git reset --hard origin/mintypi_v3
+make
 echo "Done!"
 
 echo "Your mintyPi is up-to-date.  Rebooting now..."
