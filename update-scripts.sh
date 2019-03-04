@@ -24,8 +24,9 @@ echo "Updating mintyPi scripts..."
 cd /home/pi/OneForAll
 git fetch --all
 git reset --hard origin/mintypi_v3
-make clean
-make
+cd /home/pi/OneForAll/osd
+sudo -u pi make clean
+sudo -u pi make
 echo "Done!"
 
 echo "Your mintyPi is up-to-date.  Rebooting now..."
