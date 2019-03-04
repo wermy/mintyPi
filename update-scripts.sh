@@ -24,6 +24,7 @@ echo "Updating mintyPi scripts..."
 cd /home/pi/OneForAll
 git fetch --all
 git reset --hard origin/mintypi_v3
+make clean
 make
 echo "Done!"
 
