@@ -20,7 +20,7 @@ sleep 2s
 echo "Updating Will.I.Am's mintyPi theme..."
 cd /home/pi/.emulationstation/themes/tft-mintypi
 git fetch --all
-git reset --hard origin/master
+git reset --hard origin/mintyPiv3
 echo "Done!"
 sleep 2s
 
