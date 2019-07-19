@@ -34,6 +34,19 @@ sudo -u pi make
 echo "Done!"
 sleep 2s
 
+cd /home/pi
+if [ -d "/home/pi/mintyPi_setup" ] 
+then
+    cd /home/pi/mintyPi_setup
+    git fetch --all
+    git reset --hard /origin/master
+else
+    git clone https://github.com/wermy/mintyPi_setup.git
+fi
+
+cd /home/pi/mintyPi_setup
+sudo sh ./copy_files.sh
+
 echo "Your mintyPi is up-to-date.  Rebooting now..."
 sleep 5s
 sudo reboot
