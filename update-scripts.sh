@@ -44,7 +44,7 @@ else
     git clone https://github.com/wermy/mintyPi_setup.git
 fi
 
-cd /home/pi/mintyPi_setup
+cd /home/pi/mintyPi_setup/mintyPi
 sudo sh ./copy_files.sh
 
 echo "Your mintyPi is up-to-date.  Rebooting now..."
