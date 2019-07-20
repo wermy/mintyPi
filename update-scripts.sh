@@ -39,7 +39,7 @@ if [ -d "/home/pi/mintyPi_setup" ]
 then
     cd /home/pi/mintyPi_setup
     git fetch --all
-    git reset --hard /origin/master
+    git reset --hard origin/master
 else
     git clone https://github.com/wermy/mintyPi_setup.git
 fi
