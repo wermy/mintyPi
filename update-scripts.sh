@@ -9,8 +9,6 @@ else
 fi
 
 echo "Updating mintyPi..."
-chmod +x /home/pi/mintyPi/minty-startup.sh
-sleep 2s
 
 echo "Updating material theme..."
 cd /home/pi/.emulationstation/themes/es-theme-material
@@ -55,6 +53,8 @@ fi
 
 cd /home/pi/mintyPi_setup/mintyPi
 sudo sh ./copy_files.sh
+chmod +x /home/pi/mintyPi/minty-startup.sh
+sleep 2s
 
 echo "Your mintyPi is up-to-date.  Rebooting now..."
 sleep 5s
