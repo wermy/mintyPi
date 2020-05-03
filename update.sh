@@ -2,5 +2,4 @@
 
 git fetch --all
 git reset --hard origin/mintyPi_Lite
-git pull
 sh ./update-scripts.sh
